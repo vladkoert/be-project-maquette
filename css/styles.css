@@ -104,7 +104,7 @@ h3.prod__name { font-size:1.4rem; }
 /* ---- Header ---- */
 .header { position:sticky; top:0; z-index:40; background:var(--ink); border-bottom:1px solid rgba(255,255,255,.1); }
 .header__in { display:flex; align-items:center; justify-content:space-between; height:88px; gap:24px; }
-.logo img { height:32px; width:auto; }
+.logo img { height:44px; width:auto; }
 .nav { display:flex; gap:28px; font-size:.9rem; font-weight:500; color:var(--cream); }
 .nav a:hover { opacity:.65; }
 .header__actions { display:flex; align-items:center; gap:14px; }
