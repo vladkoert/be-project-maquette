@@ -359,7 +359,22 @@ blockquote.quote {
   .proof__in { grid-template-columns:repeat(2, 1fr); gap:28px; }
   .reviews { grid-template-columns:1fr; }
   .footer__top { grid-template-columns:1fr 1fr; }
+
   .nav { display:none; }
+  .burger { display:inline-flex; }
+  .burger .i-close { display:none; }
+  .header.menu-open .burger .i-open { display:none; }
+  .header.menu-open .burger .i-close { display:block; }
+  .header.menu-open .nav {
+    display:flex; flex-direction:column;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--cream); border-bottom:1px solid var(--line);
+    box-shadow:0 16px 28px rgba(40,40,40,.1);
+    padding:8px 24px 20px; gap:0;
+  }
+  .header.menu-open .nav a {
+    padding:14px 0; font-size:1.05rem; border-bottom:1px solid var(--line);
+  }
 }
 
 @media (max-width: 620px) {
