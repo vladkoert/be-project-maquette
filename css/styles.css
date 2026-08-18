@@ -194,7 +194,7 @@ h1 em, h2.display em, blockquote.quote em {
 }
 .prod__line { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px; }
 .prod__price { font-weight:600; }
-.prod__promise { color:var(--muted); font-size:.92rem; margin-bottom:12px; }
+.prod__promise { color:var(--muted); font-size:.92rem; line-height:1.5; min-height:3em; margin-bottom:12px; }
 .prod__meta { display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--muted); margin-bottom:16px; }
 
 /* ---- Sections formule (Chill / Focus / Strong) ---- */
