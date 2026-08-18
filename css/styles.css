@@ -177,6 +177,7 @@ h1 em, h2.display em, blockquote.quote em {
 /* ---- Grille produits ---- */
 .grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; }
 .prod { display:flex; flex-direction:column; }
+.prod > .btn { margin-top:auto; }
 .prod__tile {
   position:relative; border-radius:var(--radius-md); overflow:hidden;
   aspect-ratio:1/1; margin-bottom:18px; display:flex; align-items:center; justify-content:center;
