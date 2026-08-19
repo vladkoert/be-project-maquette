@@ -1,14 +1,3 @@
-const fontSwitch = document.getElementById('fontSwitch');
-if (fontSwitch) {
-  const useSage = document.documentElement.classList.contains('use-sage');
-  fontSwitch.setAttribute('aria-checked', String(useSage));
-  fontSwitch.addEventListener('click', () => {
-    const isSage = document.documentElement.classList.toggle('use-sage');
-    fontSwitch.setAttribute('aria-checked', String(isSage));
-    localStorage.setItem('titleFont', isSage ? 'sage' : 'ogg');
-  });
-}
-
 const header = document.querySelector('.header');
 const burger = document.querySelector('.burger');
 if (burger) {
