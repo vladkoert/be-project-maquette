@@ -37,6 +37,13 @@ if (burger && hdr) {
   });
 }
 
+// ---- Nav sticky : transparente en haut de page, visible dès qu'on scrolle ----
+if (hdr) {
+  const setStuck = () => hdr.classList.toggle('is-stuck', window.scrollY > 20);
+  setStuck();
+  window.addEventListener('scroll', setStuck, { passive: true });
+}
+
 // ---- Carrousel d'avis clients ----
 const reviewCarousel = document.getElementById('reviewCarousel');
 if (reviewCarousel) {

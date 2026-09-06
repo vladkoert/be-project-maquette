@@ -149,6 +149,11 @@ p:last-child { margin-bottom: 0; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--hdr-h);
+  background: transparent;
+  box-shadow: none;
+  transition: background-color .25s ease, box-shadow .25s ease;
+}
+.hdr.is-stuck {
   background: var(--off);
   box-shadow: 0 2px 14px rgba(10, 24, 48, .07);
 }
@@ -265,10 +270,6 @@ p:last-child { margin-bottom: 0; }
 .imgf--r   { border-radius: 0 var(--r) var(--r) 0; }
 .imgf--sq  { border-radius: 0; }
 
-/* « shape blocks » : rectangles de fond qui débordent d'une section à l'autre */
-.shape { border-radius: var(--r); }
-.shape--navy  { background: var(--navy); }
-#p0e { background: var(--accent); }
 .box { border: 1px solid var(--line-navy); border-radius: var(--r); }
 .rule { border-top: 1px solid var(--line-navy); }
 
@@ -286,7 +287,6 @@ p:last-child { margin-bottom: 0; }
   #p0c { grid-area: 14 / 2 / 16 / 7;   z-index: 4; }
   #p0d { grid-area: 14 / 7 / 16 / 12;  z-index: 5; }
   #p0h { grid-area: 16 / 2 / 18 / 12;  z-index: 4; }
-  #p0e { grid-area: 5 / 17 / 18 / 27;  z-index: 1; }
   #p0f { grid-area: 3 / 16 / 16 / 26;  z-index: 2; }
 
   /* 3 · à propos */
