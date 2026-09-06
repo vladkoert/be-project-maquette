@@ -47,7 +47,7 @@ if (reviewCarousel) {
 
   function showSlide(i) {
     current = (i + slides.length) % slides.length;
-    slides.forEach((s, j) => { s.hidden = j !== current; });
+    slides.forEach((s, j) => s.classList.toggle('is-active', j === current));
     dots.forEach((d, j) => d.classList.toggle('is-active', j === current));
   }
 
@@ -70,4 +70,4 @@ const io = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));

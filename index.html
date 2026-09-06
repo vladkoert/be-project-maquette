@@ -25,11 +25,11 @@
       <a href="#services">Nos services</a>
       <a href="#avis">Avis clients</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="nav__only-mobile">Espace client</a>
     </nav>
-    <a class="btn btn--solid btn--sm hdr__cta" href="#contact">Espace client</a>
     <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/>
+      </svg>
     </button>
   </div>
 </header>
@@ -38,14 +38,14 @@
 <!-- ══════════ 0 · HERO ══════════ -->
 <section class="sec sec--light sec--hero" id="accueil">
   <div class="fe fe--hero">
-    <div class="b" id="p0a"><p class="eyebrow">Cabinet Druart Thomas</p></div>
-    <div class="b" id="p0b">
+    <div class="b reveal" id="p0a"><p class="eyebrow">Cabinet Druart Thomas</p></div>
+    <div class="b reveal" id="p0b">
       <h1>Votre entreprise.<br>Votre vie professionnelle.<br><span class="hl">Vos choix.</span></h1>
       <p>Tout comme chaque personne est unique, chaque activité l'est également. Adapter notre accompagnement à votre situation, vos besoins et vos objectifs : telle est notre approche.</p>
     </div>
-    <div class="b b--start" id="p0c"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
+    <div class="b b--start reveal" id="p0c"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
     <div class="b shape shape--navy" id="p0e"></div>
-    <div class="b" id="p0f">
+    <div class="b reveal" id="p0f">
       <figure class="imgf imgf--tl">
         <img src="img/hero.jpg" alt="Une comptable travaillant sur son ordinateur portable dans un bureau lumineux">
       </figure>
@@ -58,7 +58,7 @@
 <!-- ══════════ 1 · BANDEAU SERVICES ══════════ -->
 <section class="sec sec--navy" id="services">
   <div class="fe">
-    <div class="b ta-c" id="p1a">
+    <div class="b ta-c reveal" id="p1a">
       <p class="eyebrow">Nos services</p>
       <h3>Un accompagnement comptable, fiscal et stratégique à chaque étape</h3>
     </div>
@@ -69,7 +69,7 @@
 <!-- ══════════ 2 · CARTES SERVICES ══════════ -->
 <section class="sec sec--navy sec--list">
   <div class="wrap">
-    <ul class="cards">
+    <ul class="cards stagger">
       <li class="card">
         <img class="card__icon" src="img/icon-compta.jpg" alt="">
         <h2>Comptabilité</h2>
@@ -94,19 +94,19 @@
 <section class="sec sec--light" id="a-propos">
   <div class="fe">
     <div class="b shape shape--navy" id="p3b"></div>
-    <div class="b" id="p3a">
+    <div class="b reveal" id="p3a">
       <figure class="imgf imgf--all">
         <img src="img/about.jpg" alt="Une professionnelle du chiffre au travail dans son bureau">
       </figure>
     </div>
-    <div class="b" id="p3c"><p class="eyebrow">À propos</p></div>
-    <div class="b" id="p3d">
+    <div class="b reveal" id="p3c"><p class="eyebrow">À propos</p></div>
+    <div class="b reveal" id="p3d">
       <h3>Fondé en 2022, un cabinet d'expertise-comptable certifié et de conseil fiscal agréé</h3>
       <p>Le Cabinet Druart Thomas est agréé par l'Institute for Tax Advisors and Accountants (I.T.A.A.). Nous accompagnons principalement les indépendants et les sociétés dans leur comptabilité, leurs obligations fiscales et leurs décisions financières.</p>
       <p class="meta">Votre interlocuteur : <b>Thomas Druart</b> — Expert – Comptable (Fiscal) Certifié I.T.A.A. 11.842.484 · Administrateur de la S.R.L. Cabinet Druart Thomas, I.T.A.A. 53.530.761.</p>
     </div>
-    <div class="b b--start" id="p3e"><a class="btn btn--solid" href="#contact">Travailler avec nous</a></div>
-    <div class="b ta-c" id="p3f"><p class="eyebrow">Ils nous font confiance</p></div>
+    <div class="b b--start reveal" id="p3e"><a class="btn btn--solid" href="#contact">Travailler avec nous</a></div>
+    <div class="b ta-c reveal" id="p3f"><p class="eyebrow">Ils nous font confiance</p></div>
   </div>
 </section>
 
@@ -114,7 +114,7 @@
 <!-- ══════════ 4 · BANDEAU LOGOS ══════════ -->
 <section class="sec sec--light sec--strip">
   <div class="wrap">
-    <ul class="logos" aria-label="Secteurs et partenaires accompagnés">
+    <ul class="logos stagger" aria-label="Secteurs et partenaires accompagnés">
       <li><svg viewBox="0 0 40 40"><circle cx="15" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="25" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="2"/></svg></li>
       <li><svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/></svg></li>
       <li><svg viewBox="0 0 40 40"><path d="M20 6 34 32H6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="24" r="2.4" fill="currentColor"/></svg></li>
@@ -130,18 +130,18 @@
 <!-- ══════════ 5 · NOTRE ENGAGEMENT ══════════ -->
 <section class="sec sec--white">
   <div class="fe">
-    <div class="b" id="p5a">
+    <div class="b reveal" id="p5a">
       <figure class="imgf imgf--r">
         <img src="img/partner.jpg" alt="Un bureau avec un ordinateur portable et des documents comptables">
       </figure>
     </div>
-    <div class="b" id="p5c"><p class="eyebrow">Notre engagement</p></div>
-    <div class="b" id="p5d">
+    <div class="b reveal" id="p5c"><p class="eyebrow">Notre engagement</p></div>
+    <div class="b reveal" id="p5d">
       <h2>Nous ne nous limitons pas à établir vos obligations comptables et fiscales</h2>
       <p>Nous cherchons à vous donner une vision claire de votre situation afin que vous puissiez prendre vos décisions avec les bonnes informations.</p>
       <p class="quote-line">« Qualité, rigueur, mais aussi humanisme. »</p>
     </div>
-    <div class="b b--start" id="p5e"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
+    <div class="b b--start reveal" id="p5e"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
   </div>
 </section>
 
@@ -149,7 +149,7 @@
 <!-- ══════════ 6 · REPÈRES ══════════ -->
 <section class="sec sec--white sec--list">
   <div class="wrap">
-    <ul class="stats">
+    <ul class="stats stagger">
       <li class="stat"><h2>2022</h2><p>Année de fondation du cabinet</p></li>
       <li class="stat"><h2>3</h2><p>Phases d'accompagnement</p></li>
       <li class="stat"><h2>100%</h2><p>Suivi personnalisé</p></li>
@@ -170,7 +170,7 @@
     <!-- Avis d'exemple (2e et 3e) à remplacer par de vrais témoignages clients -->
     <div class="review-carousel reveal" id="reviewCarousel">
       <div class="review-carousel__viewport">
-        <figure class="review2" data-slide-index="0">
+        <figure class="review2 is-active" data-slide-index="0">
           <span class="review2__mark" aria-hidden="true">&ldquo;</span>
           <div class="review2__stars" aria-label="Note : 5 étoiles sur 5">
             <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
@@ -187,7 +187,7 @@
           </figcaption>
         </figure>
 
-        <figure class="review2" data-slide-index="1" hidden>
+        <figure class="review2" data-slide-index="1">
           <span class="review2__mark" aria-hidden="true">&ldquo;</span>
           <div class="review2__stars" aria-label="Note : 5 étoiles sur 5">
             <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
@@ -204,7 +204,7 @@
           </figcaption>
         </figure>
 
-        <figure class="review2" data-slide-index="2" hidden>
+        <figure class="review2" data-slide-index="2">
           <span class="review2__mark" aria-hidden="true">&ldquo;</span>
           <div class="review2__stars" aria-label="Note : 5 étoiles sur 5">
             <svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
@@ -243,21 +243,21 @@
 <!-- ══════════ 8 · CONTACT ══════════ -->
 <section class="sec sec--navy sec--contact-alt" id="contact">
   <div class="fe fe--contact">
-    <div class="b" id="p10a"><p class="eyebrow">Travaillons ensemble</p></div>
-    <div class="b" id="p10b">
+    <div class="b reveal" id="p10a"><p class="eyebrow">Travaillons ensemble</p></div>
+    <div class="b reveal" id="p10b">
       <h2>Une question, un projet, une envie de changer de comptable ?</h2>
       <p>Parlons de votre situation : nous revenons vers vous rapidement pour convenir d'un premier échange.</p>
     </div>
-    <div class="b b--start" id="p10c"><a class="btn btn--ghost" href="mailto:info@cabinetdruart.be">Nous écrire</a></div>
+    <div class="b b--start reveal" id="p10c"><a class="btn btn--ghost" href="mailto:info@cabinetdruart.be">Nous écrire</a></div>
     <div class="b box" id="p10e"></div>
-    <div class="b" id="p10f">
+    <div class="b reveal" id="p10f">
       <ul class="coords">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Rue du Poseur, 1386 — 7090 Braine-le-Comte</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> <a href="tel:+32474771938">+32 474/77.19.38</a></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m3 6 9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg> <a href="mailto:info@cabinetdruart.be">info@cabinetdruart.be</a></li>
       </ul>
     </div>
-    <div class="b" id="p10d">
+    <div class="b reveal" id="p10d">
       <form class="form form--panel" onsubmit="return false">
         <p class="form__legend">Nom</p>
         <div class="form__row">
