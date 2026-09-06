@@ -303,8 +303,9 @@ p:last-child { margin-bottom: 0; }
 
 /* hero */
 #p0b p { margin-top: 22px; max-width: 34em; }
-.badge { font-size: 13px; font-weight: 500; color: var(--on-navy); margin: 0; }
-.badge b { color: var(--white); }
+.badge { font-size: 13px; font-weight: 600; color: var(--white); margin: 0; }
+.badge b { color: var(--accent); font-weight: 700; }
+#p1a .eyebrow { margin-bottom: 8px; }
 
 /* 2 · cartes services (carte r30, padding 6%, pastille ronde — comme le template) */
 .sec--list { padding: 0 0 96px; }
@@ -314,18 +315,16 @@ p:last-child { margin-bottom: 0; }
   border-radius: var(--r);
   padding: 6%;
   color: var(--on-navy);
+  text-align: center;          /* le template centre le contenu des cartes */
 }
 .card__icon {
-  width: 44px; height: 44px;
-  margin-bottom: 5%;
-  border: 1px solid var(--line-navy);
+  width: 46px; height: 46px;
+  margin: 0 auto 5%;
   border-radius: 50%;
-  display: grid; place-items: center;
-  color: var(--accent);
-  background: rgba(23, 61, 237, .14);
+  object-fit: cover;
 }
-.card__icon svg { width: 20px; height: 20px; }
 .card h2 { font-size: 22px; color: var(--off); margin-bottom: 14px; }
+.card__list { display: inline-block; text-align: left; }
 .card__list li {
   position: relative;
   padding-left: 16px;
@@ -342,17 +341,23 @@ p:last-child { margin-bottom: 0; }
   background: var(--accent);
 }
 
-/* 4 · bandeau clients (sprite découpé dans la planche de portraits du flyer) */
-.sec--strip { padding: 34px 0 74px; }
-.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
-.chip {
-  width: 64px; height: 64px;
-  border-radius: 50%;
-  background-image: url('../img/clients-grid.jpg');
-  background-size: 600% 200%;
-  background-position: calc(var(--cx) * 20%) calc(var(--cy) * 100%);
-  filter: grayscale(1) contrast(1.05);
-  opacity: .88;
+/* 4 · bandeau « ils nous font confiance » (la ligne de logos du template) */
+.sec--strip { padding: 26px 0 74px; }
+.sectors {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px 20px;
+}
+.sectors li {
+  white-space: nowrap;
+  font-family: var(--serif);
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: .78;
 }
 
 /* 6 · repères */
@@ -361,33 +366,27 @@ p:last-child { margin-bottom: 0; }
   background: rgba(220, 222, 226, .55);
   border-radius: var(--r);
   padding: 6%;
+  text-align: center;
 }
 .stat h2 { margin-bottom: 6px; }
 .stat p { font-size: 13.5px; color: var(--text-soft); }
 
-/* 7 · avis client */
-.sec-head { text-align: center; max-width: 640px; margin: 0 auto 34px; }
-.sec-head .eyebrow { margin-bottom: 10px; }
-.quote-wrap { display: flex; justify-content: center; margin-bottom: 30px; }
+/* 7 · avis client — titre à gauche, carte à droite (comme le template) */
+.reviews { display: grid; grid-template-columns: 5fr 7fr; gap: 60px; align-items: start; }
+.reviews__head .eyebrow { margin-bottom: 10px; }
+.reviews__head h3 { margin-bottom: 26px; }
 .quote-card {
   background: var(--white);
   border-radius: var(--r);
-  padding: 15.8px 26.4px 26.4px;
-  max-width: 430px;
+  padding: 26px 28px 28px;
+  max-width: 440px;
   margin: 0;
-  text-align: center;
 }
-.quote-card__avatar {
-  width: 66px; height: 66px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 14px;
-  filter: grayscale(1);
-}
-.quote-card blockquote { margin: 0 0 16px; font-size: 15px; line-height: 1.55; color: var(--text); }
-.quote-card figcaption { font-size: 13px; }
-.quote-card figcaption b { display: block; font-weight: 600; }
-.quote-card figcaption span { color: var(--accent); }
+.quote-card__stars { display: flex; gap: 3px; margin-bottom: 14px; }
+.quote-card__stars svg { width: 15px; height: 15px; fill: var(--accent); }
+.quote-card h2 { font-size: 22px; margin-bottom: 10px; }
+.quote-card blockquote { margin: 0 0 14px; font-size: 14.5px; line-height: 1.6; color: var(--text-soft); }
+.quote-card figcaption { font-size: 13px; font-weight: 500; color: var(--accent); }
 
 /* 8 · accordéon (filets à l'accent, icône à droite — comme le template) */
 .acc__item { border-top: 1px solid var(--accent); }
@@ -430,6 +429,19 @@ p:last-child { margin-bottom: 0; }
 .form input:focus, .form textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 .form .btn { align-self: flex-start; margin-top: 4px; }
 
+/* le formulaire de contact du template est posé dans un panneau arrondi translucide */
+.form--panel {
+  background: rgba(220, 222, 226, .06);
+  border: 1px solid var(--line-navy);
+  border-radius: var(--r);
+  padding: 26px 28px 28px;
+}
+.form__legend { font-size: 13px; font-weight: 600; color: var(--on-navy); margin: 0; }
+.form label i { font-style: normal; font-weight: 300; opacity: .55; }
+.form label.form__check { flex-direction: row; align-items: center; gap: 8px; font-weight: 300; font-size: 12px; }
+.form label.form__check input { width: auto; flex: none; padding: 0; accent-color: var(--accent); }
+.form__submit { align-self: stretch; width: 100%; margin-top: 8px; }
+
 .sec--navy .form label { color: var(--on-navy); }
 .sec--navy .form input, .sec--navy .form textarea {
   background: rgba(220, 222, 226, .07);
@@ -451,7 +463,7 @@ p:last-child { margin-bottom: 0; }
 
 /* 11 · appel final */
 .sec--cta {
-  background-image: linear-gradient(rgba(0, 0, 41, .74), rgba(0, 0, 41, .74)), url('../img/mountain-wide.jpg');
+  background-image: linear-gradient(rgba(0, 0, 41, .78), rgba(0, 0, 41, .78)), url('../img/cta.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -521,11 +533,12 @@ p:last-child { margin-bottom: 0; }
   .sec--list { padding-bottom: 58px; }
   .cards, .stats { grid-template-columns: 1fr; gap: 18px; }
   .card, .stat { padding: 26px; }
-  .chips { gap: 12px; }
-  .chip { width: 52px; height: 52px; }
+  .sectors { justify-content: center; gap: 10px 20px; }
   .form__row { grid-template-columns: 1fr; }
-  .sec--strip { padding: 10px 0 48px; }
-  .quote-card { padding: 20px 22px 24px; }
+  .sec--strip { padding: 4px 0 48px; }
+  .reviews { grid-template-columns: 1fr; gap: 28px; }
+  .quote-card { padding: 22px; max-width: none; }
+  .form--panel { padding: 22px; }
   .cta-links { flex-direction: column; gap: 12px; }
   .foot-logo { height: 36px; }
 }
@@ -533,6 +546,7 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 768px) and (max-width: 1099px) {
   .cards { grid-template-columns: repeat(2, 1fr); gap: 28px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .reviews { gap: 32px; }
   .nav { gap: 18px; }
   .nav a { font-size: 12px; }
 }
