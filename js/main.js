@@ -37,23 +37,29 @@ if (burger && hdr) {
   });
 }
 
-// ---- Accordéon « Notre approche » (un seul volet ouvert, comme le template) ----
-const accItems = document.querySelectorAll('.acc__item');
-accItems.forEach(item => {
-  const btn = item.querySelector('.acc__btn');
-  if (btn.getAttribute('aria-expanded') === 'true') item.classList.add('is-open');
-  btn.addEventListener('click', () => {
-    const willOpen = !item.classList.contains('is-open');
-    accItems.forEach(other => {
-      other.classList.remove('is-open');
-      other.querySelector('.acc__btn').setAttribute('aria-expanded', 'false');
+// ---- Carrousel d'avis clients ----
+const reviewCarousel = document.getElementById('reviewCarousel');
+if (reviewCarousel) {
+  const slides = Array.from(reviewCarousel.querySelectorAll('[data-slide-index]'));
+  const dots = Array.from(reviewCarousel.querySelectorAll('.review-carousel__dot'));
+  const nav = reviewCarousel.querySelector('.review-carousel__nav');
+  let current = 0;
+
+  function showSlide(i) {
+    current = (i + slides.length) % slides.length;
+    slides.forEach((s, j) => { s.hidden = j !== current; });
+    dots.forEach((d, j) => d.classList.toggle('is-active', j === current));
+  }
+
+  if (slides.length <= 1) {
+    if (nav) nav.hidden = true;
+  } else {
+    reviewCarousel.querySelectorAll('.review-carousel__arrow').forEach(btn => {
+      btn.addEventListener('click', () => showSlide(current + Number(btn.dataset.dir)));
     });
-    if (willOpen) {
-      item.classList.add('is-open');
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
+    dots.forEach((dot, j) => dot.addEventListener('click', () => showSlide(j)));
+  }
+}
 
 // ---- Apparition au défilement ----
 const io = new IntersectionObserver(entries => {

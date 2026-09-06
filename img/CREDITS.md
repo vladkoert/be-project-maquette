@@ -9,8 +9,6 @@ sans attribution obligatoire. Ce fichier documente simplement la provenance.
 | `hero.jpg` | https://unsplash.com/photos/1713947503588-8ff8196dc4a3 |
 | `about.jpg` | https://unsplash.com/photos/1600275669283-4bf2bb8a990c |
 | `partner.jpg` | https://unsplash.com/photos/1631557777232-a2632ae3c67d |
-| `inset.jpg` | https://unsplash.com/photos/1554224155-6726b3ff858f |
-| `process.jpg` | https://unsplash.com/photos/1583521214690-73421a1829a9 |
 | `icon-compta.jpg` | https://unsplash.com/photos/1554224155-1696413565d3 |
 | `icon-fisca.jpg` | https://unsplash.com/photos/1554224154-22dec7ec8818 |
 | `icon-gestion.jpg` | https://unsplash.com/photos/1543286386-713bdd548da4 |
