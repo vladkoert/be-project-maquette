@@ -145,10 +145,12 @@ p:last-child { margin-bottom: 0; }
    ========================================================================== */
 
 .hdr {
-  position: absolute;
+  position: sticky;
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--hdr-h);
+  background: var(--off);
+  box-shadow: 0 2px 14px rgba(10, 24, 48, .07);
 }
 .hdr__in {
   height: 100%;
@@ -264,7 +266,7 @@ p:last-child { margin-bottom: 0; }
 .imgf--sq  { border-radius: 0; }
 
 /* « shape blocks » : rectangles de fond qui débordent d'une section à l'autre */
-.shape { border-radius: 0; }
+.shape { border-radius: var(--r); }
 .shape--navy  { background: var(--navy); }
 #p0e { background: var(--accent); }
 #services { background: var(--accent); }
@@ -280,7 +282,6 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 768px) {
 
   /* 0 · hero */
-  .sec--hero { padding-top: var(--hdr-h); }
   #p0a { grid-area: 3 / 2 / 4 / 8;     z-index: 3; }
   #p0b { grid-area: 4 / 2 / 14 / 12;   z-index: 4; }
   #p0c { grid-area: 14 / 2 / 16 / 7;   z-index: 4; }
@@ -288,7 +289,6 @@ p:last-child { margin-bottom: 0; }
   #p0h { grid-area: 16 / 2 / 18 / 12;  z-index: 4; }
   #p0e { grid-area: 5 / 14 / 19 / 27;  z-index: 1; }
   #p0f { grid-area: 1 / 14 / 17 / 27;  z-index: 2; }
-  #p0g { grid-area: 17 / 17 / 19 / 26; z-index: 6; }
 
   /* 3 · à propos */
   #p3a { grid-area: 3 / 14 / 19 / 24;  z-index: 6; }
@@ -331,8 +331,6 @@ p:last-child { margin-bottom: 0; }
 /* hero */
 #p0b p { margin-top: 22px; max-width: 34em; }
 .hero__trust { font-size: 13px; color: var(--text-soft); margin: 0; }
-.badge { font-size: 13px; font-weight: 600; color: var(--on-navy); margin: 0; }
-.badge b { color: var(--white); font-weight: 700; }
 .sec--list { padding: 72px 0 100px; }
 .wrap--wide { max-width: 1320px; }
 
@@ -392,7 +390,10 @@ p:last-child { margin-bottom: 0; }
 }
 .svc__icon svg { width: 24px; height: 24px; }
 .svc h2 { font-size: 20px; margin-bottom: 12px; }
-.svc p { font-size: 14.5px; line-height: 1.65; margin: 0 0 24px; opacity: .8; flex: 1; }
+.svc p { font-size: 14.5px; line-height: 1.65; margin: 0 0 24px; flex: 1; }
+.svc--light p  { color: var(--text-soft); }
+.svc--accent p { color: var(--white); }
+.svc--dark p   { color: var(--on-navy-soft); }
 .svc__link {
   margin-top: auto;
   display: inline-flex;
@@ -575,7 +576,6 @@ p:last-child { margin-bottom: 0; }
    ========================================================================== */
 
 @media (max-width: 767px) {
-  .hdr { position: relative; background: var(--off); }
   .nav {
     position: absolute; top: 100%; left: 0; right: 0;
     flex-direction: column; align-items: stretch; gap: 0;
@@ -618,13 +618,11 @@ p:last-child { margin-bottom: 0; }
   .b--start .btn { width: 100%; }
 
   /* ordre de lecture une fois les blocs empilés */
-  #p0a { order: 1 } #p0b { order: 2 } #p0f { order: 3 } #p0g { order: 4 } #p0c { order: 5 } #p0d { order: 6 } #p0h { order: 7 }
+  #p0a { order: 1 } #p0b { order: 2 } #p0f { order: 3 } #p0c { order: 5 } #p0d { order: 6 } #p0h { order: 7 }
   #p3c { order: 1 } #p3d { order: 2 } #p3e { order: 3 } #p3a { order: 4 } #p3f { order: 5 }
   #p5c { order: 1 } #p5d { order: 2 } #p5e { order: 3 } #p5a { order: 4 }
   #p10a { order: 1 } #p10b { order: 2 } #p10f { order: 3 } #p10c { order: 4 } #p10d { order: 5 }
 
-  /* le badge du hero perd son rectangle de fond : on le lui redonne */
-  #p0g { background: var(--navy); border-radius: var(--r); padding: 16px 22px; }
   #p10f { border: 1px solid var(--line-navy); border-radius: var(--r); padding: 22px; }
 
   .imgf { position: static; }
