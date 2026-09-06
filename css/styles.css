@@ -129,6 +129,8 @@ p:last-child { margin-bottom: 0; }
 }
 .btn--sm { min-height: 38px; padding: 0 34.9px; font-size: 13px; }
 .btn--solid { background: var(--navy); color: var(--off); }
+#p0c .btn { background: var(--accent); color: var(--white); }
+#p0c .btn:hover { background: var(--navy); }
 .btn--ghost { background: var(--white); color: var(--navy); }
 .sec--navy .btn--ghost { background: var(--off); color: var(--navy); }
 .btn:hover {
@@ -168,7 +170,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-soft);
   cursor: pointer;
 }
-.logo-switch button.is-active { background: var(--navy); border-color: var(--navy); color: var(--off); }
+.logo-switch button.is-active { background: #263349; border-color: #263349; color: var(--off); }
 .logo-switch button { transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
 .logo-switch button:hover { transform: scale(1.1); }
 
@@ -226,7 +228,7 @@ p:last-child { margin-bottom: 0; }
 
 /* la section contact doit se démarquer du footer juste en dessous,
    sans quoi les deux blocs se confondent en un seul aplat navy */
-.sec--contact-alt { background: var(--navy-800); padding-bottom: 64px; }
+.sec--contact-alt { background: var(--accent); padding-bottom: 64px; }
 .sec--footer, .sec--copy { background: var(--navy-950); }
 
 .fe {
@@ -338,6 +340,7 @@ p:last-child { margin-bottom: 0; }
 
 /* 2 · cartes services (carte r30, fond blanc, icônes, texte seul) */
 .sec--list { padding: 72px 0 100px; }
+.sec--navy.sec--list { background: var(--accent); }
 .wrap--wide { max-width: 1320px; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .card {
