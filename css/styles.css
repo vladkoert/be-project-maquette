@@ -220,7 +220,7 @@ p:last-child { margin-bottom: 0; }
   content: "";
   display: block;
   width: 100%;
-  height: 2px;
+  height: .5px;
   background: var(--white);
 }
 
@@ -285,7 +285,7 @@ p:last-child { margin-bottom: 0; }
   #p0g { grid-area: 17 / 17 / 19 / 26; z-index: 6; }
 
   /* 1 · bandeau */
-  #p1a { grid-area: 2 / 10 / 6 / 18; z-index: 1; }
+  #p1a { grid-area: 2 / 5 / 6 / 21; z-index: 1; }
 
   /* 3 · à propos */
   #p3a { grid-area: 3 / 14 / 19 / 24;  z-index: 6; }
@@ -331,14 +331,19 @@ p:last-child { margin-bottom: 0; }
 .badge { font-size: 13px; font-weight: 600; color: var(--on-navy); margin: 0; }
 .badge b { color: var(--white); font-weight: 700; }
 #p1a .eyebrow { margin-bottom: .5em; }
+#p1a h3 { max-width: 22ch; margin: 0 auto; }
 
 /* 2 · cartes services (carte r30, padding généreux, pastille ronde, texte seul) */
 .sec--list { padding: 72px 0 100px; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .card {
   background: var(--navy-2);
   border-radius: var(--r);
-  padding: 48px 40px;
+  padding: 64px 48px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--on-navy);
   text-align: center;
   transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
@@ -348,15 +353,15 @@ p:last-child { margin-bottom: 0; }
   box-shadow: 0 30px 50px -22px rgba(10, 24, 48, .5);
 }
 .card__icon {
-  width: 50px; height: 50px;
-  margin: 0 auto 22px;
+  width: 62px; height: 62px;
+  margin: 0 auto 26px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform .35s ease;
 }
 .card:hover .card__icon { transform: scale(1.1); }
-.card h2 { font-size: 22px; color: var(--off); margin-bottom: 16px; }
-.card p { font-size: 14.5px; line-height: 1.7; color: var(--on-navy-soft); margin: 0; }
+.card h2 { font-size: 25px; color: var(--off); margin-bottom: 18px; }
+.card p { font-size: 15.5px; line-height: 1.75; color: var(--on-navy-soft); margin: 0; }
 
 /* 4 · bandeau de logos (placeholders décoratifs, taille uniforme) */
 .sec--strip { padding: 30px 0 78px; }
@@ -582,7 +587,7 @@ p:last-child { margin-bottom: 0; }
   .sec--hero { padding-top: 0; }
   .sec--list { padding-bottom: 58px; }
   .cards, .stats { grid-template-columns: 1fr; gap: 18px; }
-  .card { padding: 34px 28px; }
+  .card { padding: 40px 30px; min-height: 0; }
   .stat { padding: 30px 24px; }
   .logos { justify-content: center; gap: 22px 32px; }
   .form__row { grid-template-columns: 1fr; }
