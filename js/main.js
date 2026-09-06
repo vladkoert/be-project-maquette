@@ -15,6 +15,23 @@ logoButtons.forEach(btn => {
   });
 });
 
+// ---- Switch de teinte (bleu vif / bleu sombre) ----
+const themeButtons = document.querySelectorAll('.theme-switch button');
+const savedTheme = localStorage.getItem('accentTheme');
+if (savedTheme) {
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  themeButtons.forEach(b => b.classList.toggle('is-active', b.dataset.theme === savedTheme));
+}
+themeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const theme = btn.dataset.theme || '';
+    if (theme) document.documentElement.setAttribute('data-theme', theme);
+    else document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('accentTheme', theme);
+    themeButtons.forEach(b => b.classList.toggle('is-active', b === btn));
+  });
+});
+
 // ---- Menu burger (mobile) ----
 const burger = document.querySelector('.burger');
 const hdr = document.querySelector('.hdr');

@@ -14,7 +14,8 @@
   --navy-950: #0A1830;   /* navy le plus sombre : contact, mentions      */
   --navy-800: #123262;   /* navy principal : sections sombres, boutons   */
   --navy-600: #1E4C94;   /* bleu secondaire, plus vif : cartes sur navy  */
-  --accent:   #2F6FED;   /* bleu d'accent vif : CTA, liens, surlignage   */
+  --accent:     #2F6FED; /* bleu d'accent vif : CTA, liens, surlignage   */
+  --accent-rgb: 47, 111, 237;
   --blue-100: #EEF3FF;   /* fond clair, tonalité bleutée                 */
   --slate-500:#57647F;   /* gris-bleu, texte/traits secondaires          */
   --slate-300:#D2DEF3;   /* gris-bleu clair, bordures sur fond clair     */
@@ -37,6 +38,12 @@
 
   --r: 30px;           /* rayon du template */
   --hdr-h: 85px;       /* hauteur d'en-tête du template */
+}
+
+/* variante sombre de l'accent, activée via le switch du header */
+:root[data-theme="dark"] {
+  --accent:     #1D3F82;
+  --accent-rgb: 29, 63, 130;
 }
 
 /* ==========================================================================
@@ -87,7 +94,7 @@ p:last-child { margin-bottom: 0; }
    barre droite — un léger tracé ondulé sous le mot */
 /* surlignage doux façon marqueur, plus subtil qu'un trait */
 .hl {
-  background-color: rgba(47, 111, 237, .14);
+  background-color: rgba(var(--accent-rgb), .14);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   padding: .05em .28em;
@@ -137,7 +144,7 @@ p:last-child { margin-bottom: 0; }
   background: var(--accent);
   color: var(--white);
   transform: translateY(-3px);
-  box-shadow: 0 14px 26px -12px rgba(47, 111, 237, .55);
+  box-shadow: 0 14px 26px -12px rgba(var(--accent-rgb), .55);
 }
 .btn--solid:hover { background: var(--navy); }
 .btn:active { transform: translateY(-1px); }
@@ -181,6 +188,19 @@ p:last-child { margin-bottom: 0; }
 .logo-switch button.is-active { background: #263349; border-color: #263349; color: var(--off); }
 .logo-switch button { transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
 .logo-switch button:hover { transform: scale(1.1); }
+
+.theme-switch { display: flex; align-items: center; gap: 7px; margin-right: 20px; }
+.theme-switch button {
+  width: 18px; height: 18px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: var(--dot);
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease;
+}
+.theme-switch button.is-active { border-color: var(--text-soft); transform: scale(1.15); }
+.theme-switch button:hover { transform: scale(1.15); }
 
 .nav { display: flex; align-items: center; gap: 28px; margin-right: 24px; }
 .nav a {
@@ -377,7 +397,7 @@ p:last-child { margin-bottom: 0; }
 .svc--accent { background: var(--accent); color: var(--white); }
 .svc--dark   { background: var(--navy-950); color: var(--on-navy); }
 .svc--light:hover  { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
-.svc--accent:hover { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(47, 111, 237, .45); }
+.svc--accent:hover { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(var(--accent-rgb), .45); }
 .svc--dark:hover   { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(10, 24, 48, .55); }
 
 .svc__icon {
