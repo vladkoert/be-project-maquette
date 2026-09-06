@@ -286,8 +286,8 @@ p:last-child { margin-bottom: 0; }
   #p0c { grid-area: 14 / 2 / 16 / 7;   z-index: 4; }
   #p0d { grid-area: 14 / 7 / 16 / 12;  z-index: 5; }
   #p0h { grid-area: 16 / 2 / 18 / 12;  z-index: 4; }
-  #p0e { grid-area: 5 / 14 / 19 / 27;  z-index: 1; }
-  #p0f { grid-area: 1 / 14 / 17 / 27;  z-index: 2; }
+  #p0e { grid-area: 5 / 17 / 18 / 27;  z-index: 1; }
+  #p0f { grid-area: 3 / 16 / 16 / 26;  z-index: 2; }
 
   /* 3 · à propos */
   #p3a { grid-area: 3 / 14 / 19 / 24;  z-index: 6; }
