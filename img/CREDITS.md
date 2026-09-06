@@ -11,12 +11,9 @@ sans attribution obligatoire. Ce fichier documente simplement la provenance.
 | `partner.jpg` | https://unsplash.com/photos/1631557777232-a2632ae3c67d |
 | `inset.jpg` | https://unsplash.com/photos/1554224155-6726b3ff858f |
 | `process.jpg` | https://unsplash.com/photos/1583521214690-73421a1829a9 |
-| `review.jpg` | https://unsplash.com/photos/1544654803-b69140b285a1 |
-| `cta.jpg` | https://unsplash.com/photos/1775163024488-e88e4a71179f |
 | `icon-compta.jpg` | https://unsplash.com/photos/1554224155-1696413565d3 |
 | `icon-fisca.jpg` | https://unsplash.com/photos/1554224154-22dec7ec8818 |
 | `icon-gestion.jpg` | https://unsplash.com/photos/1543286386-713bdd548da4 |
-| `icon-mission.jpg` | https://unsplash.com/photos/1549923746-c502d488b3ea |
 
 Les logos (`logo/`) proviennent des fichiers fournis par le cabinet.
 

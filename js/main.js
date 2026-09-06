@@ -55,17 +55,6 @@ accItems.forEach(item => {
   });
 });
 
-// ---- Étoiles de notation ----
-document.querySelectorAll('.stars').forEach(group => {
-  const stars = Array.from(group.querySelectorAll('svg'));
-  stars.forEach((star, i) => {
-    star.addEventListener('click', () => {
-      stars.forEach((s, j) => s.classList.toggle('is-on', j <= i));
-      group.dataset.value = i + 1;
-    });
-  });
-});
-
 // ---- Apparition au défilement ----
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
