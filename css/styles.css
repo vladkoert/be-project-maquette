@@ -536,13 +536,30 @@ p:last-child { margin-bottom: 0; }
 .form input:focus, .form textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 .form .btn { align-self: flex-start; margin-top: 6px; }
 
-/* le formulaire de contact du template est posé dans un panneau arrondi translucide */
+/* le formulaire de contact est posé dans un panneau blanc, détaché du fond bleu */
 .form--panel {
-  background: rgba(231, 235, 249, .06);
-  border: 1px solid var(--line-navy);
+  background: var(--white);
+  border: none;
   border-radius: var(--r);
   padding: 34px 36px;
+  box-shadow: 0 30px 60px -30px rgba(10, 24, 48, .35);
 }
+#p10d .form--panel .form__legend,
+#p10d .form--panel label { color: var(--text); }
+#p10d .form--panel input,
+#p10d .form--panel textarea {
+  background: var(--off);
+  border-color: var(--line);
+  color: var(--text);
+}
+#p10d .form--panel input::placeholder,
+#p10d .form--panel textarea::placeholder { color: var(--slate-500); opacity: .6; }
+
+/* la box de coordonnées passe aussi en blanc */
+#p10e { background: var(--white); border-color: transparent; box-shadow: 0 30px 60px -30px rgba(10, 24, 48, .35); }
+#p10f, #p10f a, #p10f li { color: var(--text); }
+#p10f svg { color: var(--accent); }
+#p10f a:hover { color: var(--accent); }
 .form__legend { font-size: 13px; font-weight: 600; color: var(--on-navy); margin: 0; }
 .form label i { font-style: normal; font-weight: 300; opacity: .55; }
 .form label.form__check { flex-direction: row; align-items: center; gap: 8px; font-weight: 300; font-size: 12px; }
@@ -624,7 +641,7 @@ p:last-child { margin-bottom: 0; }
   #p5c { order: 1 } #p5d { order: 2 } #p5e { order: 3 } #p5a { order: 4 }
   #p10a { order: 1 } #p10b { order: 2 } #p10f { order: 3 } #p10c { order: 4 } #p10d { order: 5 }
 
-  #p10f { border: 1px solid var(--line-navy); border-radius: var(--r); padding: 22px; }
+  #p10f { background: var(--white); border-radius: var(--r); padding: 22px; }
 
   .imgf { position: static; }
   .imgf img { position: static; width: 100%; height: auto; }
