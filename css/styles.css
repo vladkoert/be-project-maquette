@@ -156,7 +156,7 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   gap: 12px;
 }
-.brand img { height: 40px; width: auto; }
+.brand img { height: 54px; width: auto; }
 
 .logo-switch { display: flex; gap: 2px; margin-right: auto; }
 .logo-switch button {
@@ -226,7 +226,8 @@ p:last-child { margin-bottom: 0; }
 
 /* la section contact doit se démarquer du footer juste en dessous,
    sans quoi les deux blocs se confondent en un seul aplat navy */
-.sec--contact-alt { background: var(--navy-950); padding-bottom: 64px; }
+.sec--contact-alt { background: var(--navy-800); padding-bottom: 64px; }
+.sec--footer, .sec--copy { background: var(--navy-950); }
 
 .fe {
   --cgap: 14px;
@@ -293,7 +294,7 @@ p:last-child { margin-bottom: 0; }
   #p3c { grid-area: 6 / 3 / 7 / 9;     z-index: 1; }
   #p3d { grid-area: 7 / 3 / 16 / 12;   z-index: 2; }
   #p3e { grid-area: 16 / 3 / 18 / 10;  z-index: 3; }
-  #p3f { grid-area: 19 / 14 / 20 / 21; z-index: 2; }
+  #p3f { grid-area: 19 / 2 / 20 / 26; z-index: 2; }
 
   /* 5 · notre engagement */
   #p5a { grid-area: 3 / 1 / 18 / 13;   z-index: 6; }
@@ -333,35 +334,40 @@ p:last-child { margin-bottom: 0; }
 #p1a .eyebrow { margin-bottom: .5em; }
 #p1a h3 { max-width: 22ch; margin: 0 auto; }
 
-/* 2 · cartes services (carte r30, padding généreux, pastille ronde, texte seul) */
+/* 2 · cartes services (carte r30, fond blanc, icônes, texte seul) */
 .sec--list { padding: 72px 0 100px; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.wrap--wide { max-width: 1320px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .card {
-  background: var(--navy-2);
+  background: var(--white);
   border-radius: var(--r);
-  padding: 64px 48px;
+  padding: 64px 44px;
   min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--on-navy);
+  color: var(--text);
   text-align: center;
   transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
 }
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 30px 50px -22px rgba(10, 24, 48, .5);
+  box-shadow: 0 30px 50px -22px rgba(10, 24, 48, .22);
 }
 .card__icon {
   width: 62px; height: 62px;
   margin: 0 auto 26px;
   border-radius: 50%;
-  object-fit: cover;
+  display: grid;
+  place-items: center;
+  background: var(--off);
+  color: var(--accent);
   transition: transform .35s ease;
 }
+.card__icon svg { width: 28px; height: 28px; }
 .card:hover .card__icon { transform: scale(1.1); }
-.card h2 { font-size: 25px; color: var(--off); margin-bottom: 18px; }
-.card p { font-size: 15.5px; line-height: 1.75; color: var(--on-navy-soft); margin: 0; }
+.card h2 { font-size: 25px; color: var(--navy); margin-bottom: 18px; }
+.card p { font-size: 15.5px; line-height: 1.75; color: var(--text-soft); margin: 0; }
 
 /* 4 · bandeau de logos (placeholders décoratifs, taille uniforme) */
 .sec--strip { padding: 30px 0 78px; }
@@ -373,7 +379,7 @@ p:last-child { margin-bottom: 0; }
 }
 .logos li { display: flex; align-items: center; justify-content: center; height: 40px; }
 .logos svg {
-  height: 34px; width: auto; color: var(--slate-500); opacity: .55;
+  height: 34px; width: auto; color: var(--navy-800); opacity: .6;
   transition: opacity .3s ease, transform .3s cubic-bezier(.16,1,.3,1), color .3s ease;
 }
 .logos li:hover svg { opacity: 1; transform: scale(1.12); color: var(--accent); }
