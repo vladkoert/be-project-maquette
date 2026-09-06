@@ -397,10 +397,10 @@ p:last-child { margin-bottom: 0; }
 }
 .svc--light  { background: var(--white); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
 .svc--accent { background: var(--off); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
-.svc--dark   { background: var(--navy-950); color: var(--on-navy); }
+.svc--dark   { background: var(--white); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
 .svc--light:hover  { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
 .svc--accent:hover { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
-.svc--dark:hover   { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(10, 24, 48, .55); }
+.svc--dark:hover   { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
 
 .svc__icon {
   width: 52px; height: 52px;
@@ -416,7 +416,7 @@ p:last-child { margin-bottom: 0; }
 .svc p { font-size: 14.5px; line-height: 1.65; margin: 0 0 24px; flex: 1; }
 .svc--light p  { color: var(--text-soft); }
 .svc--accent p { color: var(--text-soft); }
-.svc--dark p   { color: var(--on-navy-soft); }
+.svc--dark p   { color: var(--text-soft); }
 .svc__link {
   margin-top: auto;
   display: inline-flex;
@@ -435,7 +435,7 @@ p:last-child { margin-bottom: 0; }
   transition: opacity .2s ease;
 }
 .svc--accent .svc__link--pill { background: var(--navy); color: var(--white); }
-.svc--dark .svc__link--pill { background: var(--off); color: var(--navy-950); }
+.svc--dark .svc__link--pill { background: var(--accent); color: var(--white); }
 .svc__link--pill:hover { opacity: .85; }
 
 /* 4 · bandeau de logos (placeholders décoratifs, taille uniforme) */
