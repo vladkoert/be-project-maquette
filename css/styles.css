@@ -265,6 +265,8 @@ p:last-child { margin-bottom: 0; }
 /* « shape blocks » : rectangles de fond qui débordent d'une section à l'autre */
 .shape { border-radius: 0; }
 .shape--navy  { background: var(--navy); }
+#p0e { background: var(--accent); }
+#services { background: var(--accent); }
 .box { border: 1px solid var(--line-navy); border-radius: var(--r); }
 .rule { border-top: 1px solid var(--line-navy); }
 
