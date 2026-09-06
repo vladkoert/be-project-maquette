@@ -85,12 +85,14 @@ p:last-child { margin-bottom: 0; }
 
 /* le surlignage de mot du template : un trait tracé à la main, pas une
    barre droite — un léger tracé ondulé sous le mot */
+/* surlignage doux façon marqueur, plus subtil qu'un trait */
 .hl {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='10' viewBox='0 0 22 10'%3E%3Cpath d='M0 7 Q5.5 2 11 7 T22 7' stroke='%232F6FED' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: 0 96%;
-  background-size: 22px 10px;
-  padding-bottom: 4px;
+  background-color: rgba(47, 111, 237, .14);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: .05em .28em;
+  margin: 0 -.28em;
+  border-radius: 8px;
 }
 
 /* libellé « eyebrow » : Inter 600, capitalisé, -0.16px */
