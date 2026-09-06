@@ -355,10 +355,8 @@ p:last-child { margin-bottom: 0; }
 .sec--list { padding: 72px 0 100px; }
 .wrap--wide { max-width: 1320px; }
 
-/* 1 · nos services (d'après le mockup fourni) — fond accent, suit le switch de teinte */
-.sec--services { padding: 96px 0 104px; background: var(--accent); color: var(--on-navy); }
-.sec--services .eyebrow { color: var(--on-navy); }
-.eyebrow--dot::before { background: var(--white); }
+/* 1 · nos services (d'après le mockup fourni) */
+.sec--services { padding: 96px 0 104px; }
 .services-head {
   display: flex;
   justify-content: space-between;
@@ -396,11 +394,11 @@ p:last-child { margin-bottom: 0; }
   transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
 }
 .svc--light  { background: var(--white); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
-.svc--accent { background: var(--off); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
-.svc--dark   { background: var(--white); color: var(--text); box-shadow: 0 20px 44px -30px rgba(10, 24, 48, .18); }
+.svc--accent { background: var(--accent); color: var(--white); }
+.svc--dark   { background: var(--navy-950); color: var(--on-navy); }
 .svc--light:hover  { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
-.svc--accent:hover { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
-.svc--dark:hover   { transform: translateY(-8px); box-shadow: 0 30px 54px -24px rgba(10, 24, 48, .24); }
+.svc--accent:hover { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(var(--accent-rgb), .45); }
+.svc--dark:hover   { transform: translateY(-8px); box-shadow: 0 30px 54px -20px rgba(10, 24, 48, .55); }
 
 .svc__icon {
   width: 52px; height: 52px;
@@ -415,8 +413,8 @@ p:last-child { margin-bottom: 0; }
 .svc h2 { font-size: 20px; margin-bottom: 12px; }
 .svc p { font-size: 14.5px; line-height: 1.65; margin: 0 0 24px; flex: 1; }
 .svc--light p  { color: var(--text-soft); }
-.svc--accent p { color: var(--text-soft); }
-.svc--dark p   { color: var(--text-soft); }
+.svc--accent p { color: var(--white); }
+.svc--dark p   { color: var(--on-navy-soft); }
 .svc__link {
   margin-top: auto;
   display: inline-flex;
@@ -434,8 +432,8 @@ p:last-child { margin-bottom: 0; }
   border-radius: 300px;
   transition: opacity .2s ease;
 }
-.svc--accent .svc__link--pill { background: var(--navy); color: var(--white); }
-.svc--dark .svc__link--pill { background: var(--accent); color: var(--white); }
+.svc--accent .svc__link--pill { background: var(--white); color: var(--accent); }
+.svc--dark .svc__link--pill { background: var(--off); color: var(--navy-950); }
 .svc__link--pill:hover { opacity: .85; }
 
 /* 4 · bandeau de logos (placeholders décoratifs, taille uniforme) */
