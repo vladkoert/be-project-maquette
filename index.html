@@ -3,511 +3,405 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Be Project — Ton équilibre, un rituel à la fois</title>
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap">
-<link rel="stylesheet" href="https://use.typekit.net/suk0nkd.css">
+<title>Cabinet Druart Thomas — Expertise comptable &amp; conseil fiscal</title>
+<meta name="description" content="Cabinet d'expertise-comptable certifié et de conseil fiscal agréé I.T.A.A., à Braine-le-Comte. Comptabilité, fiscalité, gestion d'entreprise.">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<div class="promo">−15 % SUR TA PREMIÈRE COMMANDE AVEC LE CODE BE15 · LIVRAISON OFFERTE DÈS CHF 80</div>
-<header class="header">
-  <div class="wrap header__in">
-    <a class="logo" href="#" aria-label="The Be Project — accueil">
-      <img src="img/logo-white.svg" alt="The Be Project">
+<!-- ══════════ HEADER ══════════ -->
+<header class="hdr">
+  <div class="hdr__in">
+    <a class="brand" href="#accueil">
+      <img id="logoImg" src="logo/logo-icon-full.svg" alt="Cabinet Druart Thomas">
     </a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#formules">Les formules</a>
-      <a href="#trilogie">La Trilogie</a>
-      <a href="#actifs">Nos actifs</a>
-      <a href="#labo">Le labo</a>
-    </nav>
-    <div class="header__actions">
-      <a class="btn btn--ghost btn--sm" href="#quiz">Faire le test</a>
-      <button class="icon-btn" aria-label="Panier, 0 article">
-        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path d="M6 7h12l-1 13H7L6 7Z"></path><path d="M9 7V5a3 3 0 0 1 6 0v2"></path>
-        </svg>
-      </button>
-      <button class="icon-btn burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <svg class="i-open" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18"></path>
-        </svg>
-        <svg class="i-close" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path d="M6 6l12 12M18 6 6 18"></path>
-        </svg>
-      </button>
+    <div class="logo-switch" role="group" aria-label="Version du logo">
+      <button type="button" data-logo="logo/logo-icon-full.svg" class="is-active" title="Logo complet">A</button>
+      <button type="button" data-logo="logo/logo-monogram-wordmark.svg" title="Logo monogramme">B</button>
     </div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#a-propos">À propos</a>
+      <a href="#services">Nos services</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav__only-mobile">Espace client</a>
+    </nav>
+    <a class="btn btn--solid btn--sm hdr__cta" href="#contact">Espace client</a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero__media">
-    <img src="img/hero-be-focus.jpeg" alt="Flacon Be Focus posé sur un livre ouvert, à côté d'une tasse, en lumière naturelle" width="1120" height="1400">
-    <span class="hero__sticker">Fabriqué en Suisse</span>
-  </div>
-  <div class="hero__panel">
-    <div class="blob" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <p class="eyebrow">3 formules · zéro blabla</p>
-      <h1>Ton équilibre, un rituel à la fois.</h1>
-      <p class="hero__sub">
-        Trois formules aux ingrédients cliniquement étudiés, fabriquées en Suisse.
-        Une cure de 90 jours pour soutenir ta clarté, ton calme et ton immunité.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn--solid btn--display" href="#formules">Voir les formules</a>
-        <a class="btn btn--ghost btn--display" href="#quiz">Trouver la mienne</a>
-      </div>
-      <p class="hero__rating">
-        <span class="stars" role="img" aria-label="4,8 étoiles sur 5">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-        </span>
-        <span><b>4,8</b> · 1 240 avis vérifiés</span>
-      </p>
+
+<!-- ══════════ 0 · HERO ══════════ -->
+<section class="sec sec--light sec--hero" id="accueil">
+  <div class="fe fe--hero">
+    <div class="b" id="p0a"><p class="eyebrow">Cabinet Druart Thomas</p></div>
+    <div class="b" id="p0b">
+      <h1>Votre entreprise.<br>Votre vie professionnelle.<br><span class="hl">Vos choix.</span></h1>
+      <p>Tout comme chaque personne est unique, chaque activité l'est également. Adapter notre accompagnement à votre situation, vos besoins et vos objectifs : telle est notre approche.</p>
     </div>
+    <div class="b b--start" id="p0c"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
+    <div class="b b--start" id="p0d"><a class="btn btn--ghost" href="#services">Nos services</a></div>
+    <div class="b shape shape--navy" id="p0e"></div>
+    <div class="b" id="p0f">
+      <figure class="imgf imgf--tl">
+        <img src="img/hero-mountain.jpg" alt="Un chemin de montagne illuminé qui serpente vers le sommet, la nuit">
+      </figure>
+    </div>
+    <div class="b" id="p0g"><p class="badge"><b>3 phases</b> : anticipation · protection · pilotage</p></div>
   </div>
 </section>
 
-<section class="proof" aria-label="Garanties">
-  <div class="wrap proof__in">
-    <div><div class="fig__n">3</div><div class="fig__l">formules synergiques</div></div>
-    <div><div class="fig__n">100 %</div><div class="fig__l">fabriqué en Suisse</div></div>
-    <div><div class="fig__n">0</div><div class="fig__l">additif superflu</div></div>
-    <div><div class="fig__n">90</div><div class="fig__l">jours de cure</div></div>
+
+<!-- ══════════ 1 · BANDEAU SERVICES ══════════ -->
+<section class="sec sec--navy" id="services">
+  <div class="fe">
+    <div class="b" id="p1a"><h3 class="ta-c">Un accompagnement comptable, fiscal et stratégique à chaque étape</h3></div>
   </div>
 </section>
 
-<section class="section" id="formules">
+
+<!-- ══════════ 2 · CARTES SERVICES ══════════ -->
+<section class="sec sec--navy sec--list">
   <div class="wrap">
-    <div class="section__head reveal">
-      <h2 class="display">Trouve ta formule</h2>
-      <p class="lede">Parce que choisir un complément ne devrait pas demander un doctorat.</p>
-      <div class="chips" role="group" aria-label="Filtrer les produits">
-        <button class="chip" aria-pressed="true">Tout voir</button>
-        <button class="chip" aria-pressed="false">Best-sellers</button>
-        <button class="chip" aria-pressed="false">La Trilogie</button>
-      </div>
-    </div>
-
-    <div class="grid">
-      <article class="prod prod--chill reveal">
-        <div class="prod__tile">
-          <img src="img/prod-be-chill.png" alt="Flacons Be Chill" loading="lazy">
+    <ul class="cards">
+      <li class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6M9 9h2"/></svg>
         </div>
-        <div class="prod__line">
-          <h3 class="prod__name"><a href="#be-chill">Be Chill</a></h3>
-          <span class="prod__price">CHF 51</span>
-        </div>
-        <p class="prod__promise">Moins de stress dans la journée, des nuits qui réparent</p>
-        <div class="prod__meta">
-          <span class="stars" role="img" aria-label="4,8 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          <span>(431)</span>
-        </div>
-        <button class="btn btn--solid btn--sm btn--full">Ajouter au panier</button>
-      </article>
-
-      <article class="prod prod--focus reveal">
-        <div class="prod__tile">
-          <span class="prod__flag">Best-seller</span>
-          <img src="img/prod-be-focus.png" alt="Flacons Be Focus" loading="lazy">
-        </div>
-        <div class="prod__line">
-          <h3 class="prod__name"><a href="#be-focus">Be Focus</a></h3>
-          <span class="prod__price">CHF 59</span>
-        </div>
-        <p class="prod__promise">Concentration nette, zéro coup de barre à 15 h</p>
-        <div class="prod__meta">
-          <span class="stars" role="img" aria-label="4,9 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          <span>(512)</span>
-        </div>
-        <button class="btn btn--solid btn--sm btn--full">Ajouter au panier</button>
-      </article>
-
-      <article class="prod prod--strong reveal">
-        <div class="prod__tile">
-          <img src="img/prod-be-strong.png" alt="Flacons Be Strong" loading="lazy">
-        </div>
-        <div class="prod__line">
-          <h3 class="prod__name"><a href="#be-strong">Be Strong</a></h3>
-          <span class="prod__price">CHF 54</span>
-        </div>
-        <p class="prod__promise">Des défenses solides, toute la saison</p>
-        <div class="prod__meta">
-          <span class="stars" role="img" aria-label="4,7 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          <span>(297)</span>
-        </div>
-        <button class="btn btn--solid btn--sm btn--full">Ajouter au panier</button>
-      </article>
-
-      <article class="prod prod--trio reveal">
-        <div class="prod__tile">
-          <span class="prod__flag">Économise CHF 35</span>
-          <img src="img/trilogie-groupe.png" alt="Les trois flacons de la Trilogie" loading="lazy">
-        </div>
-        <div class="prod__line">
-          <h3 class="prod__name">La Trilogie</h3>
-          <span class="prod__price">CHF 129</span>
-        </div>
-        <p class="prod__promise">Les trois, du matin au soir</p>
-        <div class="prod__meta">
-          <span class="stars" role="img" aria-label="4,9 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          <span>(204)</span>
-        </div>
-        <button class="btn btn--solid btn--sm btn--full">Ajouter au panier</button>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="formula formula--chill" id="be-chill" aria-labelledby="t-chill">
-  <div class="wrap formula__in">
-    <div class="formula__media reveal">
-      <div class="blob" aria-hidden="true"></div>
-      <img src="img/prod-be-chill.png" alt="Flacons Be Chill" loading="lazy">
-      <span class="formula__badge">Le soir</span>
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Be Chill · 21 h</p>
-      <h2 class="display" id="t-chill">Le stress qui redescend, enfin.</h2>
-      <p class="lede">Ton corps est au lit, ta tête est encore en réunion. Be Chill, c'est la formule stress : ashwagandha et basilic sacré aident le corps à encaisser la pression du quotidien, pour rester posé sous tension et récupérer la nuit.</p>
-      <ul class="bullets">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Le stress du quotidien, encaissé au lieu d'être subi</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Un mental qui reste clair sous pression</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Des nuits qui réparent, un réveil sans brouillard</span></li>
-      </ul>
-      <div class="tags">
-        <span class="tag">Ashwagandha</span>
-        <span class="tag">Basilic sacré (tulsi)</span>
-        <span class="tag">Camomille &amp; mélisse</span>
-      </div>
-      <div class="buy">
-        <span class="buy__price">CHF 51</span>
-        <span class="buy__meta">
-          <span class="stars" role="img" aria-label="4,8 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          4,8 · 431 avis
-        </span>
-        <button class="btn btn--solid">Ajouter au panier</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="formula formula--focus formula--flip" id="be-focus" aria-labelledby="t-focus">
-  <div class="wrap formula__in">
-    <div class="formula__media reveal">
-      <div class="blob" aria-hidden="true"></div>
-      <img src="img/prod-be-focus.png" alt="Flacons Be Focus" loading="lazy">
-      <span class="formula__badge">Le matin</span>
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Be Focus · 8 h</p>
-      <h2 class="display" id="t-focus">La clarté qui tient jusqu'au soir.</h2>
-      <p class="lede">Ce n'est pas le temps qui te manque, c'est la tête claire. Be Focus soutient la concentration et l'endurance mentale sur les longues journées, sans stimulant ni caféine de synthèse : ni nervosité, ni descente.</p>
-      <ul class="bullets">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Concentration nette dès la première heure</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Zéro coup de barre à 15 h</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Pas de nervosité, pas de descente</span></li>
-      </ul>
-      <div class="tags">
-        <span class="tag">L-Tyrosine</span>
-        <span class="tag">Choline</span>
-        <span class="tag">CoQ10 &amp; ginseng</span>
-      </div>
-      <div class="buy">
-        <span class="buy__price">CHF 59</span>
-        <span class="buy__meta">
-          <span class="stars" role="img" aria-label="4,9 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          4,9 · 512 avis
-        </span>
-        <button class="btn btn--solid">Ajouter au panier</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="formula formula--strong" id="be-strong" aria-labelledby="t-strong">
-  <div class="wrap formula__in">
-    <div class="formula__media reveal">
-      <div class="blob" aria-hidden="true"></div>
-      <img src="img/prod-be-strong.png" alt="Flacons Be Strong" loading="lazy">
-      <span class="formula__badge">Matin ou midi</span>
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Be Strong · 8 h ou 12 h</p>
-      <h2 class="display" id="t-strong">Des défenses qui ne lâchent pas en novembre.</h2>
-      <p class="lede">L'immunité ne se court pas après : elle se construit, jour après jour. Curcuma, sureau, gingembre et vitamine C pour soutenir tes défenses tout au long de la saison.</p>
-      <ul class="bullets">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Défenses immunitaires soutenues au quotidien</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Une vitalité stable d'un mois sur l'autre</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg><span>Une prise par jour, dans ta routine. C'est tout.</span></li>
-      </ul>
-      <div class="tags">
-        <span class="tag">Curcuma</span>
-        <span class="tag">Sureau</span>
-        <span class="tag">Gingembre &amp; vitamine C</span>
-      </div>
-      <div class="buy">
-        <span class="buy__price">CHF 54</span>
-        <span class="buy__meta">
-          <span class="stars" role="img" aria-label="4,7 étoiles sur 5">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          </span>
-          4,7 · 297 avis
-        </span>
-        <button class="btn btn--solid">Ajouter au panier</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="trilogie">
-  <div class="wrap">
-    <div class="block block--rose reveal">
-      <div>
-        <p class="eyebrow">Le rituel complet</p>
-        <h2 class="display">Une pour le matin, une pour midi, une pour la nuit.</h2>
-        <ul class="rhythm">
-          <li><span class="dot d-focus" aria-hidden="true">AM</span><span><b>Be Focus</b> — la clarté avant la première réunion</span></li>
-          <li><span class="dot d-strong" aria-hidden="true">12h</span><span><b>Be Strong</b> — les défenses, tous les jours</span></li>
-          <li><span class="dot d-chill" aria-hidden="true">PM</span><span><b>Be Chill</b> — le stress qui retombe, puis une vraie nuit</span></li>
+        <h2>Comptabilité</h2>
+        <ul class="card__list">
+          <li>Réception, encodage et suivi des pièces comptables</li>
+          <li>Situation(s) annuelle(s)</li>
+          <li>Clôture annuelle</li>
+          <li>Dépôt des comptes à la BNB</li>
         </ul>
-        <div class="price-row">
-          <span class="price-now">CHF 129</span>
-          <span class="price-was">CHF 164</span>
+      </li>
+      <li class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h4"/></svg>
         </div>
-        <span class="save">Tu économises CHF 35</span>
-        <div class="hero__cta">
-          <button class="btn btn--solid">Commander la Trilogie</button>
+        <h2>Fiscalité</h2>
+        <ul class="card__list">
+          <li>Déclarations TVA</li>
+          <li>Déclarations à l'impôt des personnes physiques</li>
+          <li>Déclarations à l'impôt des personnes morales</li>
+        </ul>
+      </li>
+      <li class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V11M10 20V6M16 20v-6M22 20V4"/></svg>
         </div>
-      </div>
-      <div class="block__media">
-        <img src="img/trilogie-groupe.png" alt="Les trois flacons Be Chill, Be Focus et Be Strong réunis" loading="lazy">
-      </div>
-    </div>
+        <h2>Gestion d'entreprise</h2>
+        <ul class="card__list">
+          <li>Analyse de situation(s) intermédiaire(s)</li>
+          <li>Analyse de bilan</li>
+          <li>Analyse de compte de résultat</li>
+          <li>Optimisation des rémunérations</li>
+          <li>Outils PEPPOL</li>
+        </ul>
+      </li>
+      <li class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+        </div>
+        <h2>Mission à valeur ajoutée</h2>
+        <ul class="card__list">
+          <li>Constitution de sociétés</li>
+          <li>Reprise de sociétés</li>
+          <li>Cession de sociétés</li>
+          <li>Demande de primes</li>
+          <li>Demande de crédit bancaire</li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </section>
 
-<section class="section" id="actifs" style="padding-top:0">
-  <div class="wrap ing">
-    <div class="ing__media reveal">
-      <div class="blob" aria-hidden="true"></div>
-      <img src="img/actifs-poudre.jpeg" alt="Poudre d'actif sur une cuillère" loading="lazy">
+
+<!-- ══════════ 3 · À PROPOS ══════════ -->
+<section class="sec sec--light" id="a-propos">
+  <div class="fe">
+    <div class="b shape shape--navy" id="p3b"></div>
+    <div class="b" id="p3a">
+      <figure class="imgf imgf--all">
+        <img src="img/founder-thomas-druart.jpg" alt="Thomas Druart, fondateur du Cabinet Druart Thomas">
+      </figure>
     </div>
-    <div class="reveal">
-      <p class="eyebrow">Nos actifs</p>
-      <h2 class="display">Des ingrédients clean, aux effets réels.</h2>
-      <p class="lede">Un actif héros par formule, choisi pour une fonction précise — pas pour faire joli sur l'étiquette.</p>
-      <ul class="ing-list">
-        <li class="i-focus">
-          <span class="pill" aria-hidden="true">01</span>
-          <span class="name">L-Tyrosine<span class="for">Be Focus · rester net sous pression</span></span>
-        </li>
-        <li class="i-chill">
-          <span class="pill" aria-hidden="true">02</span>
-          <span class="name">Ashwagandha<span class="for">Be Chill · équilibre du cortisol</span></span>
-        </li>
-        <li class="i-strong">
-          <span class="pill" aria-hidden="true">03</span>
-          <span class="name">Curcuma<span class="for">Be Strong · antioxydants et défenses</span></span>
-        </li>
-      </ul>
+    <div class="b" id="p3c"><p class="eyebrow">À propos</p></div>
+    <div class="b" id="p3d">
+      <h3>Fondé en 2022, un cabinet d'expertise-comptable certifié et de conseil fiscal agréé</h3>
+      <p>Le Cabinet Druart Thomas est agréé par l'Institute for Tax Advisors and Accountants (I.T.A.A.). Nous accompagnons principalement les indépendants et les sociétés dans leur comptabilité, leurs obligations fiscales et leurs décisions financières.</p>
+      <p class="meta">Votre interlocuteur : <b>Thomas Druart</b> — Expert – Comptable (Fiscal) Certifié I.T.A.A. 11.842.484 · Administrateur de la S.R.L. Cabinet Druart Thomas, I.T.A.A. 53.530.761.</p>
     </div>
+    <div class="b b--start" id="p3e"><a class="btn btn--solid" href="#contact">Travailler avec nous</a></div>
+    <div class="b" id="p3f"><p class="eyebrow">Ils nous font confiance :</p></div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
+
+<!-- ══════════ 4 · BANDEAU CLIENTS ══════════ -->
+<section class="sec sec--light sec--strip">
   <div class="wrap">
-    <div class="section__head reveal">
-      <h2 class="display">Oui, ça marche vraiment</h2>
-      <p class="lede">1 240 avis, 4,8 de moyenne. À ton tour.</p>
-    </div>
-    <div class="reviews">
-      <article class="review review--1 reveal">
-        <span class="stars" role="img" aria-label="5 étoiles sur 5">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-        </span>
-        <p>« Trois semaines de Be Focus et la baisse de 15 h a disparu. Pas d'excitation, pas de descente — juste la journée qui tient. »</p>
-        <div class="review__who">
-          <span class="avatar" aria-hidden="true">CM</span>
-          <span class="review__meta"><b>Camille M.</b>Genève · achat vérifié</span>
-        </div>
-      </article>
-
-      <article class="review review--2 reveal">
-        <span class="stars" role="img" aria-label="5 étoiles sur 5">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-        </span>
-        <p>« J'ai pris la Trilogie par curiosité. C'est le Chill qui m'a convaincue : je m'endors sans avoir l'impression d'être assommée. »</p>
-        <div class="review__who">
-          <span class="avatar" aria-hidden="true">LR</span>
-          <span class="review__meta"><b>Laure R.</b>Lausanne · achat vérifié</span>
-        </div>
-      </article>
-
-      <article class="review review--3 reveal">
-        <span class="stars" role="img" aria-label="4 étoiles sur 5">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"></path></svg>
-        </span>
-        <p>« Le dosage est vraiment transparent, c'est ce que je cherchais. Le test en ligne m'a orientée vers Be Strong, et c'était juste. »</p>
-        <div class="review__who">
-          <span class="avatar" aria-hidden="true">NS</span>
-          <span class="review__meta"><b>Nadia S.</b>Zurich · achat vérifié</span>
-        </div>
-      </article>
-    </div>
+    <ul class="chips" aria-label="Profils de clients accompagnés">
+      <li class="chip" style="--cx:0;--cy:0"></li>
+      <li class="chip" style="--cx:1;--cy:0"></li>
+      <li class="chip" style="--cx:2;--cy:0"></li>
+      <li class="chip" style="--cx:3;--cy:0"></li>
+      <li class="chip" style="--cx:4;--cy:0"></li>
+      <li class="chip" style="--cx:5;--cy:0"></li>
+      <li class="chip" style="--cx:0;--cy:1"></li>
+      <li class="chip" style="--cx:1;--cy:1"></li>
+      <li class="chip" style="--cx:2;--cy:1"></li>
+      <li class="chip" style="--cx:3;--cy:1"></li>
+      <li class="chip" style="--cx:4;--cy:1"></li>
+      <li class="chip" style="--cx:5;--cy:1"></li>
+    </ul>
   </div>
 </section>
 
-<section class="section" id="labo" style="padding-top:0">
-  <div class="wrap">
-    <div class="block block--lime reveal">
-      <div class="founder__media">
-        <div class="blob" aria-hidden="true"></div>
-        <div class="portrait">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
-            <rect x="2.5" y="6.5" width="19" height="13" rx="2.5"></rect>
-            <circle cx="12" cy="13" r="3.6"></circle>
-            <path d="M8 6.5l1.2-2h5.6l1.2 2"></path>
-          </svg>
-          <span>Portrait à produire<br>fondateur·rice</span>
-        </div>
-      </div>
-      <div>
-        <p class="eyebrow">Le labo</p>
-        <blockquote class="quote">
-          « On a écrit chaque dosage avant de dessiner la moindre étiquette. Ce qui est sur le flacon est ce qui est dans la gélule. »
-        </blockquote>
-        <p class="sig">Prénom Nom</p>
-        <p class="sig-role">Fondateur·rice · The Be Project, Lausanne</p>
-        <p class="lede">Formulé et conditionné en Suisse avec un laboratoire partenaire certifié. Chaque lot est analysé avant mise en vente.</p>
-        <div class="hero__cta">
-          <a class="btn btn--ghost" href="#">Voir nos analyses de lot</a>
-        </div>
-      </div>
+
+<!-- ══════════ 5 · NOTRE ENGAGEMENT ══════════ -->
+<section class="sec sec--white">
+  <div class="fe">
+    <div class="b" id="p5a">
+      <figure class="imgf imgf--r">
+        <img src="img/clients-quad.jpg" alt="Portraits de clients accompagnés par le cabinet : professions libérales, artisans, commerçants">
+      </figure>
     </div>
+    <div class="b" id="p5b">
+      <figure class="imgf imgf--tl">
+        <img src="img/avatar-client2.jpg" alt="">
+      </figure>
+    </div>
+    <div class="b" id="p5c"><p class="eyebrow">Notre engagement</p></div>
+    <div class="b" id="p5d">
+      <h2>Nous ne nous limitons pas à établir vos obligations comptables et fiscales</h2>
+      <p>Nous cherchons à vous donner une vision claire de votre situation afin que vous puissiez prendre vos décisions avec les bonnes informations.</p>
+      <p class="quote-line">« Qualité, rigueur, mais aussi humanisme. »</p>
+    </div>
+    <div class="b b--start" id="p5e"><a class="btn btn--solid" href="#contact">Prendre contact</a></div>
   </div>
 </section>
 
-<section class="section" id="quiz" style="padding-top:0">
+
+<!-- ══════════ 6 · REPÈRES ══════════ -->
+<section class="sec sec--white sec--list">
   <div class="wrap">
-    <div class="quiz reveal">
-      <div class="blob" aria-hidden="true"></div>
-      <div class="quiz__in">
-        <p class="eyebrow">2 minutes, 6 questions</p>
-        <h2 class="display center">On te dit quoi prendre, et quand.</h2>
-        <p class="lede center">Six questions sur ton sommeil, ta charge mentale et ta saison. C'est tout.</p>
-        <form class="emailform" onsubmit="return false">
-          <div class="field">
-            <label for="email">Recevoir le résultat par e-mail</label>
-            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="prenom@exemple.ch">
-            <small>Une fois par mois, jamais revendu.</small>
+    <ul class="stats">
+      <li class="stat"><h2>I.T.A.A.</h2><p>Expert – Comptable (Fiscal) Certifié — 11.842.484</p></li>
+      <li class="stat"><h2>2022</h2><p>Année de fondation du cabinet</p></li>
+      <li class="stat"><h2>3 phases</h2><p>Anticipation · Protection · Pilotage</p></li>
+      <li class="stat"><h2>S.R.L.</h2><p>Cabinet Druart Thomas — I.T.A.A. 53.530.761</p></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ══════════ 7 · AVIS CLIENT ══════════ -->
+<section class="sec sec--light sec--list" id="avis">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">L'avis de nos clients</p>
+      <h3>Des retours clairs, sur des relations de confiance</h3>
+    </div>
+    <div class="quote-wrap">
+      <figure class="quote-card">
+        <img class="quote-card__avatar" src="img/avatar-sophie.jpg" alt="">
+        <blockquote>Un accompagnement clair, réactif et humain. Des conseils pertinents qui nous permettent de prendre les bonnes décisions. Une vraie relation de confiance.</blockquote>
+        <figcaption><b>Sophie L.</b><span>Médecin généraliste</span></figcaption>
+      </figure>
+    </div>
+    <div class="ta-c"><a class="btn btn--solid btn--sm" href="#donner-avis">Donner votre avis</a></div>
+  </div>
+</section>
+
+
+<!-- ══════════ 8 · NOTRE APPROCHE ══════════ -->
+<section class="sec sec--light">
+  <div class="fe">
+    <div class="b shape shape--white" id="p8d"></div>
+    <div class="b" id="p8c">
+      <figure class="imgf imgf--all">
+        <img src="img/mountain-summit.jpg" alt="Le sommet éclairé de la montagne, symbole d'une trajectoire anticipée">
+      </figure>
+    </div>
+    <div class="b" id="p8a"><p class="eyebrow">Notre approche</p></div>
+    <div class="b" id="p8b">
+      <ul class="acc">
+        <li class="acc__item">
+          <h3 class="acc__title">
+            <button type="button" class="acc__btn" aria-expanded="true">
+              <span>01/ Anticipation</span>
+              <svg class="acc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel">
+            <p class="acc__lede">Parce que se limiter à constater les chiffres de l'année écoulée est insuffisant.</p>
+            <p>Au travers d'au minimum une situation comptable annuelle, nous analysons la situation de votre activité et anticipons les conséquences fiscales et financières des mois à venir.</p>
           </div>
-        </form>
-        <div class="hero__cta" style="justify-content:center">
-          <button class="btn btn--solid">Commencer le test</button>
+        </li>
+        <li class="acc__item">
+          <h3 class="acc__title">
+            <button type="button" class="acc__btn" aria-expanded="false">
+              <span>02/ Protection</span>
+              <svg class="acc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel">
+            <p class="acc__lede">Parce que rechercher l'optimisation n'est que la première étape.</p>
+            <p>Nous vous alertons sur les points de vigilance comptables et fiscaux afin de sécuriser votre activité et vos décisions.</p>
+          </div>
+        </li>
+        <li class="acc__item">
+          <h3 class="acc__title">
+            <button type="button" class="acc__btn" aria-expanded="false">
+              <span>03/ Pilotage</span>
+              <svg class="acc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel">
+            <p class="acc__lede">Parce que donner un bilan n'est pas une finalité en soi.</p>
+            <p>Grâce à une analyse annuelle de vos chiffres, nous vous donnons une vision claire de votre situation et des clés utiles au pilotage de votre entreprise.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 9 · DONNER VOTRE AVIS ══════════ -->
+<section class="sec sec--white" id="donner-avis">
+  <div class="fe">
+    <div class="b" id="p9a">
+      <figure class="imgf imgf--sq">
+        <img src="img/mountain-square.jpg" alt="">
+      </figure>
+    </div>
+    <div class="b" id="p9b"><p class="eyebrow">Votre avis compte</p></div>
+    <div class="b" id="p9c">
+      <h2>Donner votre avis</h2>
+    </div>
+    <div class="b" id="p9d">
+      <form class="form form--review" onsubmit="return false">
+        <p class="form__note">Votre avis est important pour nous. Il sera soumis à validation avant d'être publié sur notre site.</p>
+        <div class="form__row">
+          <input type="text" aria-label="Nom – Prénom" placeholder="Nom – Prénom">
+          <input type="text" aria-label="Activité" placeholder="Activité">
         </div>
+        <div class="stars" role="radiogroup" aria-label="Note sur 5">
+          <span class="stars__label">Note</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18l-6.5 4 1.6-7.4-5.6-5 7.5-.7Z"/></svg>
+        </div>
+        <textarea aria-label="Votre avis" placeholder="Votre avis"></textarea>
+        <button class="btn btn--solid btn--sm" type="submit">Envoyer mon avis</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 10 · CONTACT ══════════ -->
+<section class="sec sec--navy" id="contact">
+  <div class="fe fe--contact">
+    <div class="b" id="p10a"><p class="eyebrow">Travaillons ensemble</p></div>
+    <div class="b" id="p10b">
+      <h2>Une question, un projet, une envie de changer de comptable ?</h2>
+    </div>
+    <div class="b b--start" id="p10c"><a class="btn btn--ghost" href="mailto:info@cabinetdruart.be">Nous écrire</a></div>
+    <div class="b box" id="p10e"></div>
+    <div class="b" id="p10f">
+      <ul class="coords">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Rue du Poseur, 1386 — 7090 Braine-le-Comte</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> <a href="tel:+32474771938">+32 474/77.19.38</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m3 6 9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg> <a href="mailto:info@cabinetdruart.be">info@cabinetdruart.be</a></li>
+      </ul>
+    </div>
+    <div class="b" id="p10d">
+      <form class="form form--contact" onsubmit="return false">
+        <div class="form__row">
+          <label>Prénom<input type="text" placeholder="Prénom"></label>
+          <label>Nom<input type="text" placeholder="Nom"></label>
+        </div>
+        <label>Email<input type="email" placeholder="vous@exemple.be"></label>
+        <label>Sujet<input type="text" placeholder="Objet de votre demande"></label>
+        <label>Message<textarea placeholder="Votre message"></textarea></label>
+        <button class="btn btn--ghost btn--sm" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 11 · APPEL FINAL ══════════ -->
+<section class="sec sec--ink sec--cta">
+  <div class="fe">
+    <div class="b" id="p11a"><p class="eyebrow">Cabinet Druart Thomas</p></div>
+    <div class="b" id="p11b"><h2>Intéressé par notre accompagnement ?</h2></div>
+    <div class="b b--start" id="p11c">
+      <div class="cta-links">
+        <a href="tel:+32474771938"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> +32 474/77.19.38</a>
+        <a href="mailto:info@cabinetdruart.be"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 6 9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg> info@cabinetdruart.be</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <img class="footer__logo" src="img/logo-white.svg" alt="The Be Project">
-        <p>Trois formules synergiques, formulées et fabriquées en Suisse. Pour les journées qui n'attendent pas.</p>
-      </div>
-      <div>
-        <h4>Boutique</h4>
-        <ul>
-          <li><a href="#formules">Be Focus</a></li>
-          <li><a href="#formules">Be Chill</a></li>
-          <li><a href="#formules">Be Strong</a></li>
-          <li><a href="#trilogie">La Trilogie</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Comprendre</h4>
-        <ul>
-          <li><a href="#actifs">Nos actifs</a></li>
-          <li><a href="#labo">Le labo</a></li>
-          <li><a href="#labo">Analyses de lot</a></li>
-          <li><a href="#quiz">Le test</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Aide</h4>
-        <ul>
-          <li><a href="#">Livraison &amp; retours</a></li>
-          <li><a href="#">Satisfait ou remboursé</a></li>
-          <li><a href="#">Nous écrire</a></li>
-          <li><a href="#">CGV</a></li>
-        </ul>
-      </div>
+
+<!-- ══════════ 12 · PIED DE PAGE ══════════ -->
+<footer class="sec sec--navy sec--footer">
+  <div class="fe">
+    <div class="b" id="p12a">
+      <img class="foot-logo" src="logo/logo-icon-full.svg" alt="Cabinet Druart Thomas">
     </div>
-    <div class="footer__bottom">
-      <span>© 2026 The Be Project · Fabriqué en Suisse</span>
-      <span>Maquette de direction artistique — Infinity Agency</span>
+    <div class="b" id="p12b">
+      <p>Cabinet d'expertise-comptable certifié et de conseil fiscal agréé I.T.A.A., basé à Braine-le-Comte.</p>
     </div>
+    <div class="b b--start" id="p12c"><a class="btn btn--ghost btn--sm" href="#contact">Prendre contact</a></div>
+    <div class="b" id="p12d">
+      <h4>Navigation</h4>
+      <ul class="foot-list">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#avis">Avis clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="b" id="p12e">
+      <h4>Informations</h4>
+      <ul class="foot-list">
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#donner-avis">Donner votre avis</a></li>
+      </ul>
+    </div>
+    <div class="b" id="p12f">
+      <h4>Coordonnées</h4>
+      <ul class="foot-list">
+        <li>Rue du Poseur, 1386<br>7090 Braine-le-Comte</li>
+        <li><a href="tel:+32474771938">+32 474/77.19.38</a></li>
+        <li><a href="mailto:info@cabinetdruart.be">info@cabinetdruart.be</a></li>
+      </ul>
+    </div>
+    <div class="b rule" id="p12g"></div>
   </div>
 </footer>
+
+<!-- ══════════ 13 · MENTIONS ══════════ -->
+<section class="sec sec--navy sec--copy">
+  <div class="fe">
+    <div class="b" id="p13a"><p class="small ta-c">© 2026 Cabinet Druart Thomas — S.R.L. · I.T.A.A. 53.530.761</p></div>
+  </div>
+</section>
 
 <script src="js/main.js"></script>
 </body>
