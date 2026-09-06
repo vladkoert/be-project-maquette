@@ -269,7 +269,6 @@ p:last-child { margin-bottom: 0; }
 .shape { border-radius: var(--r); }
 .shape--navy  { background: var(--navy); }
 #p0e { background: var(--accent); }
-#services { background: var(--accent); }
 .box { border: 1px solid var(--line-navy); border-radius: var(--r); }
 .rule { border-top: 1px solid var(--line-navy); }
 
